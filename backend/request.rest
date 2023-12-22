@@ -1,0 +1,7 @@
+POST 'https://locahost:3001/authenticate'
+Content-type: application/json
+
+{
+    "username": "geeshau",
+    "secret": "pass1234"
+}
