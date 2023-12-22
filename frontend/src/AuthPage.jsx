@@ -8,10 +8,8 @@ const AuthPage = (props) => {
         'http://localhost:3001/authenticate',
         {username : value}
       )
-      // eslint-disable-next-line react/prop-types
       .then(r => props.onAuth({...r.data, secret: value}))
       .catch(e => console.log('error', e))
-      // eslint-disable-next-line react/prop-types
       props.onAuth({ username: value, secret: value });
     };
     return (
